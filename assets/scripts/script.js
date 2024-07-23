@@ -1,0 +1,17 @@
+let trilho = document.getElementById('trilho')
+let aside = document.getElementById('aside')
+let top3 = document.getElementById('top3')
+let gallery = document.getElementById('gallery')
+let pricing = document.getElementById('pricing')
+let footer = document.getElementById('footer')
+// let body = document.querySelector('body')
+
+trilho.addEventListener('click', ()=>{
+    trilho.classList.toggle('dark-mode')
+    aside.classList.toggle('dark-mode')
+    top3.classList.toggle('dark-mode')
+    gallery.classList.toggle('dark-mode')
+    pricing.classList.toggle('dark-mode')
+    footer.classList.toggle('dark-mode')
+    // body.classList.toggle('body')
+})

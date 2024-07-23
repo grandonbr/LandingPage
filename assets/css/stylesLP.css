@@ -6,6 +6,21 @@
     --gap: 3rem;
     --margin-left: 38rem;
     --margin-right: 38rem;
+    --dark-mode: #6b6b6b;
+    --dark-modeTwo: #000;
+}
+
+.dark-mode{
+    --primary-color: #fff;
+    --white-color: #0A1128;
+    --secondary-color: #dc143c;
+    --light-gray-color: lightgray;
+    --gap: 3rem;
+    --margin-left: 38rem;
+    --margin-right: 38rem;
+    --dark-mode: #ccc;
+    --dark-modeTwo: #000;
+    --littleDark: #111934;
 }
 
 * {
@@ -52,7 +67,7 @@ table td, table th{
 }
 
 tfoot td, table th{
-    background: var(--light-gray-color);
+    background: var(--littleDark);
 }
 
 body {
@@ -170,6 +185,34 @@ h6 {
 .menu ul li a:hover::after{
     width: 75%;
     left: 13%;
+}
+
+.trilho{
+    width: 3.5rem;
+    height: 2rem;
+    background-color: var(--dark-mode);
+    border-radius: 1.5rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.trilho .indicador{
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--dark-modeTwo);
+    border-radius: 50%;
+    transform: scale(.8);
+    position: absolute;
+    left: 0;
+    transition: 0.5s;
+}
+
+.trilho.dark-mode {
+    background-color: var(--dark-mode);
+}
+
+.trilho.dark-mode .indicador{
+    left: 1.5rem;
 }
 
 .intro-content{

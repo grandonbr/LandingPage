@@ -16,7 +16,7 @@
 <body>
     <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
     <label class="close-menu-label" for="close-menu" title="close menu"></label>
-    <aside class="menu white-bg">
+    <aside id="aside" class="menu white-bg">
         <div class="main-content">
             <h1 onclick="getElementById('close-menu').checked = false;"><a href="#">LOGO</a></h1>
             <nav>
@@ -28,6 +28,9 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+            <div id="trilho" class="trilho">
+                <div class="indicador"></div>
+            </div>
         </div>
     </aside>
     <div class="menu-spacing"></div>
@@ -163,44 +166,47 @@
     </section>
 
     <section id="contact" class="intro main-bg section">
-            
-            <div class="intro-img">
-                <div class="contact-form">
-                    <fieldset class="form-grid">
-                        <legend>Contact me</legend>
-                        <div class="form-group">
-                            <label for="first-name">First Name</label>
-                            <input type="text" name="first-name" id="first-name" placeholder="Your Name">
-                        </div>
 
-                        <div class="form-group">
-                            <label for="last-name">Last Name</label>
-                            <input type="text" name="last-name" id="last-name" placeholder="Your Last Name">
-                        </div>
+        <div class="intro-img">
+            <div class="contact-form">
+                <fieldset class="form-grid">
+                    <legend>Contact me</legend>
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first-name" id="first-name" placeholder="Your Name">
+                    </div>
 
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email" placeholder="Your Email">
-                        </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last-name" id="last-name" placeholder="Your Last Name">
+                    </div>
 
-                        <div class="form-group full-width">
-                            <label for="message">Message</label>
-                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
-                        </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Your Email">
+                    </div>
 
-                        <div class="form-group">
-                            <button type="submit">Send message</button>
-                        </div>
-                    </fieldset>
-                </div>
+                    <div class="form-group full-width">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit">Send message</button>
+                    </div>
+                </fieldset>
             </div>
+        </div>
     </section>
 
     <footer id="footer" class="footer white-bg">
-        <p>Made with <span class="heart">♥</span> by: <a rel="nofollow" target="_blank" href="https://www.linkedin.com/in/bruno-santos4930/">Bruno "Grandon" Costa</a></p>
+        <p>Made with <span class="heart">♥</span> by: <a rel="nofollow" target="_blank"
+                href="https://www.linkedin.com/in/bruno-santos4930/">Bruno "Grandon" Costa</a></p>
     </footer>
 
     <a class="back-top" href="#">^</a>
+    <script src="assets/scripts/script.js"></script>
+
 </body>
 
 </html>
